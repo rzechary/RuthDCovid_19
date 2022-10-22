@@ -1,0 +1,123 @@
+﻿@model IEnumerable<RuthDCovid_19.Models.Personal_information_and_information_covid>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.last_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aaddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_of_birth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mobile_phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_vac1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.manufacturer_vac1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_vac2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.manufacturer_vac2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_vac3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.manufacturer_vac3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_vac4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.manufacturer_vac4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_positive_result)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_recovery)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.last_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aaddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_of_birth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mobile_phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_vac1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.manufacturer_vac1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_vac2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.manufacturer_vac2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_vac3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.manufacturer_vac3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_vac4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.manufacturer_vac4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_positive_result)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_recovery)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

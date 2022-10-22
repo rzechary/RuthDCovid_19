@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RuthDausDataBaseCovid_19Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Personal_information_and_information_covid">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="name1" Type="varchar" MaxLength="400" />
+          <Property Name="last_name" Type="varchar" MaxLength="400" />
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="aaddress" Type="varchar" MaxLength="1000" />
+          <Property Name="date_of_birth" Type="date" />
+          <Property Name="pone" Type="varchar" MaxLength="10" />
+          <Property Name="mobile_phone" Type="varchar" MaxLength="11" />
+          <Property Name="date_vac1" Type="date" />
+          <Property Name="manufacturer_vac1" Type="varchar" MaxLength="1000" />
+          <Property Name="date_vac2" Type="date" />
+          <Property Name="manufacturer_vac2" Type="varchar" MaxLength="1000" />
+          <Property Name="date_vac3" Type="date" />
+          <Property Name="manufacturer_vac3" Type="varchar" MaxLength="1000" />
+          <Property Name="date_vac4" Type="date" />
+          <Property Name="manufacturer_vac4" Type="varchar" MaxLength="1000" />
+          <Property Name="date_positive_result" Type="date" />
+          <Property Name="date_recovery" Type="date" />
+        </EntityType>
+        <EntityContainer Name="RuthDausDataBaseCovid_19ModelStoreContainer">
+          <EntitySet Name="Personal_information_and_information_covid" EntityType="Self.Personal_information_and_information_covid" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RuthDausDataBaseCovid_19Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Personal_information_and_information_covid">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="name1" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="last_name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="aaddress" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="date_of_birth" Type="DateTime" />
+          <Property Name="pone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="mobile_phone" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="date_vac1" Type="DateTime" />
+          <Property Name="manufacturer_vac1" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="date_vac2" Type="DateTime" />
+          <Property Name="manufacturer_vac2" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="date_vac3" Type="DateTime" />
+          <Property Name="manufacturer_vac3" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="date_vac4" Type="DateTime" />
+          <Property Name="manufacturer_vac4" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="date_positive_result" Type="DateTime" />
+          <Property Name="date_recovery" Type="DateTime" />
+        </EntityType>
+        <EntityContainer Name="RuthDausDataBaseCovid_19Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Personal_information_and_information_covid" EntityType="Self.Personal_information_and_information_covid" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RuthDausDataBaseCovid_19ModelStoreContainer" CdmEntityContainer="RuthDausDataBaseCovid_19Entities">
+          <EntitySetMapping Name="Personal_information_and_information_covid">
+            <EntityTypeMapping TypeName="RuthDausDataBaseCovid_19Model.Personal_information_and_information_covid">
+              <MappingFragment StoreEntitySet="Personal_information_and_information_covid">
+                <ScalarProperty Name="name1" ColumnName="name1" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="aaddress" ColumnName="aaddress" />
+                <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+                <ScalarProperty Name="pone" ColumnName="pone" />
+                <ScalarProperty Name="mobile_phone" ColumnName="mobile_phone" />
+                <ScalarProperty Name="date_vac1" ColumnName="date_vac1" />
+                <ScalarProperty Name="manufacturer_vac1" ColumnName="manufacturer_vac1" />
+                <ScalarProperty Name="date_vac2" ColumnName="date_vac2" />
+                <ScalarProperty Name="manufacturer_vac2" ColumnName="manufacturer_vac2" />
+                <ScalarProperty Name="date_vac3" ColumnName="date_vac3" />
+                <ScalarProperty Name="manufacturer_vac3" ColumnName="manufacturer_vac3" />
+                <ScalarProperty Name="date_vac4" ColumnName="date_vac4" />
+                <ScalarProperty Name="manufacturer_vac4" ColumnName="manufacturer_vac4" />
+                <ScalarProperty Name="date_positive_result" ColumnName="date_positive_result" />
+                <ScalarProperty Name="date_recovery" ColumnName="date_recovery" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

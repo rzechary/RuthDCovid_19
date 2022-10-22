@@ -1,0 +1,146 @@
+﻿@model RuthDCovid_19.Models.Personal_information_and_information_covid
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Personal_information_and_information_covid</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.last_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.last_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aaddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aaddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_of_birth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_of_birth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mobile_phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mobile_phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_vac1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_vac1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturer_vac1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturer_vac1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_vac2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_vac2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturer_vac2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturer_vac2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_vac3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_vac3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturer_vac3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturer_vac3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_vac4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_vac4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturer_vac4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturer_vac4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_positive_result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_positive_result)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_recovery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_recovery)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
